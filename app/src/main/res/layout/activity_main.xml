@@ -5,7 +5,63 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvMakeReminder"
+        android:text="Make your own reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tvEnterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text:"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_below="@+id/tvMakeReminder"
+        android:layout_margin="5dp"
+        />
+
+    <EditText
+        android:id="@+id/etReminderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEnterText"
+        android:text="Reminder"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <TextView
+        android:id="@+id/tvEnterTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time:"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_below="@id/etReminderText"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/btEnterTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_below="@id/tvEnterTime"
+        />
+    <Button
+        android:id="@+id/btRemind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remind me"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_below="@+id/btEnterTime"
+        />
 
 </RelativeLayout>
